@@ -1,0 +1,54 @@
+{
+    "name": "industrious/laravel-scheduler-output-to-url",
+    "description": "A laravel package for the scheduler to post output to a url.",
+    "keywords": [
+        "industrious",
+        "laravel-scheduler-output-to-url",
+        "laravel",
+        "scheduler",
+        "output"
+    ],
+    "homepage": "https://github.com/industrious/laravel-scheduler-output-to-url",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Adam Rollinson",
+            "email": "adamleerollinson@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Industrious\\SchedulerOutputToUrl\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Industrious\\SchedulerOutputToUrl\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Industrious\\SchedulerOutputToUrl\\SchedulerOutputToUrlServiceProvider"
+            ]
+        }
+    }
+}
